@@ -1,0 +1,38 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Description>ConsoleApp1 Console Application</Description>
+    <Authors>Matthew</Authors>
+    <TargetFramework>net461</TargetFramework>
+    <AssemblyName>ConsoleApp1</AssemblyName>
+    <OutputType>Exe</OutputType>
+    <PackageId>ConsoleApp1</PackageId>
+    <GenerateAssemblyTitleAttribute>false</GenerateAssemblyTitleAttribute>
+    <GenerateAssemblyDescriptionAttribute>false</GenerateAssemblyDescriptionAttribute>
+    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+    <GenerateAssemblyCopyrightAttribute>false</GenerateAssemblyCopyrightAttribute>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Autofac" Version="3.5.2" />
+    <PackageReference Include="Castle.Windsor" Version="3.3.0" />
+    <PackageReference Include="Hiro" Version="1.0.5.17956" />
+    <PackageReference Include="Munq.IocContainer" Version="3.1.6" />
+    <PackageReference Include="Ninject" Version="3.2.2" />
+    <PackageReference Include="structuremap" Version="4.0.1.318" />
+    <PackageReference Include="Unity" Version="4.0.1" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="1.0.2" />
+  </ItemGroup>
+
+  <ItemGroup Condition=" '$(TargetFramework)' == 'dnx46' ">
+    <Reference Include="System" />
+    <Reference Include="Microsoft.CSharp" />
+  </ItemGroup>
+
+</Project>
