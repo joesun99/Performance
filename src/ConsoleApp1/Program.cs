@@ -36,7 +36,6 @@ namespace Performance
 				RunBatch();
 			else
 				RunInteractive(args);
-				
 			Console.ReadKey();
 		}
 
